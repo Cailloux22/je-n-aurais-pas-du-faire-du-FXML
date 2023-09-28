@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafx.controller.DevisController">
+
+    <ChoiceBox value="2 minutes">
+        <items>
+            <FXCollections fx:id="listEntreprise" fx:factory="observableArrayList">
+<!--                Creating dynamic amount of components in FXML-->
+<!--https://stackoverflow.com/questions/30471827/creating-dynamic-amount-of-components-in-fxml?noredirect=1-->
+<!--                No you cannot do this in FXML. -->
+                <String fx:value="2 minutes" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <TextField text="Username" />
+    <TextField text="Password" />
+    <Button text="oi"/>
+</VBox>
